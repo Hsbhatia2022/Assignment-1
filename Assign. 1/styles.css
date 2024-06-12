@@ -1,0 +1,13 @@
+*{
+    background-color:#ebf5ff;
+    color: black;
+    margin: 10px  ;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.list{
+     font-size: small; 
+     align-content: center;
+     padding: 1px;
+     line-height: 60%;;
+}   

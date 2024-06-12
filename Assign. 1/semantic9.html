@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edtech Flexbox example</title>
+<style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #8bc7df;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 10px;
+}
+
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  background-color: #4e97eb;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #1380cf;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.topolo {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topolo h2 {
+  color: #126ad5;
+  margin-bottom: 10px;
+}
+
+
+.footer {
+  background-color: #4c90af;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>Types of network topology</h1>
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="topolo">
+            <h2>Point to point topology.</h2>
+            <p>Point-to-Point Topology is a type of topology that works on the functionality of the sender and receiver. It is the simplest communication between two nodes, in which one is the sender and the other one is the receiver. Point-to-Point provides high bandwidth</p>
+        </section>
+        <section class="topolo">
+            <h2>Mesh Topology</h2>
+            <p>In a mesh topology, every device is connected to another device via a particular channel. In Mesh Topology, the protocols used are AHCP (Ad Hoc Configuration Protocols), DHCP (Dynamic Host Configuration Protocol), etc.</p>
+        </section>
+        <section class="topolo">
+            <h2>Bus Topology</h2>
+            <p>Bus Topology is a network type in which every computer and network device is connected to a single cable. It is bi-directional. It is a multi-point connection and a non-robust topology because if the backbone fails the topology crashes. In Bus Topology, various MAC (Media Access Control) protocols are followed by LAN ethernet connections like TDMA, Pure Aloha, CDMA, Slotted Aloha, etc.</p>
+        </section>
+    </main>
+    
+<aside>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste nisi quisquam ipsum iure ad at, sit numquam vero est harum maxime illum accusamus vitae aperiam reiciendis dolores eaque doloremque tempora sint? Reiciendis minus sed magnam sint commodi voluptatem ut?</p>
+    </aside>
+    
+    <footer class="footer">
+        <p>&copy; Topology. All rights reserved</p>
+    </footer>
+</body>
+</html>
